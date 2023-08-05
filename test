@@ -1,0 +1,11 @@
+#!/bin/bash
+
+command=/usr/bin/htop
+
+if [ -f $command ]
+then 
+	echo "It is avaliable, open it"
+else
+	echo "It is not avaliable, install it now"
+	sudo apt update && sudo apt install -y htop
+fi	
